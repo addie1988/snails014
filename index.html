@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>snails014</title>
+    <!-- serve -->
+    <link rel="stylesheet" type="text/css" href="./css/jquery.serialtabs.css">
     <!-- style -->
     <link rel="stylesheet" type="text/css" href="./css/style.css">
 
@@ -14,48 +16,66 @@
 <body>
 
     <!-- header -->
-    <div class="header">
+    <div class="header spa-header">
         <div class="headerContent">
-            <!-- logo -->
-            <div class="logo">
-                <div class="logoContent">
-                    <a hreh="#"><img src="./images/logo.png">
-                        <p>conulst</p>
-                    </a>
+            <div class="headerContent_box">
+                <!-- logo -->
+                <div class="logo">
+                    <div class="logoContent">
+                        <a hreh="#"><img src="./images/logo.png">
+                            <p>conulst</p>
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <div class="menu">
-                <div class="menuContent">
-                    <ul>
-                        <li><a class="home" href="#">Home</a></li>
-                        <li><a href="#">about</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Blog</a></li>
-                    </ul>
+                <div class="menu">
+                    <div class="download">
+                        <div class="download_content">
+                            <a href="#" download="#">Download</a>
+                        </div>
+                    </div>
+                    <div class="menu_click">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <nav class="menuContent">
+                        <ul>
+                            <li><a class="home" href="#">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#blog">Blog</a></li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- textBox -->
-        <div class="textBox">
-            <div class="textBoxContent">
-                <div class="textBoxContent_Contennt">
-                    <div class="textBox_Title">
-                        <h1>Your <span>Consultancy</span> Partner for Growth.</h1>
-                    </div>
-                    <div class="textBox_Title_Content">
-                        <p>Phasellus vel elit efficitur, gravida libero sit amet, scelerisque tortor arcu, commodo sit
-                            amet nulla sed.</p>
-                    </div>
-                    <div class="textBox_search">
-                        <input type="text" placeholder="username@yourdomain.com">
+    <!-- ------------------------------------------------------------- -->
+
+    <!-- textBox -->
+    <div class="textBox sticky-nav-tabs">
+        <div class="textBoxContent">
+            <div class="textBoxContent_Contennt">
+                <div class="textBox_Title">
+                    <div>
+                        <p><b>Your</b></p>
+                        <p>Consultancy</p><br>
+                        <p>Partner for <b>Growth.</b></p>
                     </div>
                 </div>
-                <div class="textBox_img">
-                    <div class="textBox_img_Content">
-                        <img src="./images/header_backgrounnd.png">
-                    </div>
+                <div class="textBox_Title_Content">
+                    <p>Phasellus vel elit efficitur, gravida libero sit amet, scelerisque tortor arcu, commodo sit
+                        amet nulla sed.</p>
+                </div>
+                <div class="textBox_search">
+                    <input type="text" placeholder="username@yourdomain.com">
+                </div>
+            </div>
+            <div class="textBox_img">
+                <div class="textBox_img_Content">
+                    <img src="./images/header_backgrounnd.png">
                 </div>
             </div>
         </div>
@@ -64,17 +84,17 @@
     <!-- ------------------------------------------------------------- -->
 
     <!-- about -->
-    <div class="about">
+    <div class="about" id="about">
         <div class="about_Content">
             <div class="about_Title">
                 <div class="about_Title_Content">
                     <span>WELCOME</span>
-                    <h6>Our 10 years working experience to take care of your business goal.</h6>
+                    <h6><b>Our 10 years working experience to</b> take care of your business goal.</h6>
                 </div>
             </div>
             <div class="about_img">
                 <div class="about_img_content">
-                    <img src="./images/about_background.jpg" alt="about_img">
+                    <img src="./images/about_background.png" alt="about_img">
                 </div>
             </div>
             <div class="about_text">
@@ -98,7 +118,9 @@
                             </div>
                             <div class="schedule_text">
                                 <div class="schedule_text_content">
-                                    <div class="demo_1" data-percent="33"></div>
+                                    <div class="second circle_1">
+                                        <strong></strong>
+                                    </div>
                                     <span>Clients</span>
                                 </div>
                             </div>
@@ -114,7 +136,9 @@
                             </div>
                             <div class="schedule_text">
                                 <div class="schedule_text_content">
-                                    <div class="demo_2" data-percent="66"></div>
+                                    <div class="second circle_2">
+                                        <strong></strong>
+                                    </div>
                                     <span>Clients</span>
                                 </div>
                             </div>
@@ -130,7 +154,9 @@
                             </div>
                             <div class="schedule_text">
                                 <div class="schedule_text_content">
-                                    <div class="demo_3" data-percent="88"></div>
+                                    <div class="second circle_3">
+                                        <strong></strong>
+                                    </div>
                                     <span>Clients</span>
                                 </div>
                             </div>
@@ -141,9 +167,301 @@
         </div>
     </div>
 
+    <!-- ------------------------------------------------------------- -->
 
+    <!-- serve -->
+    <div class="serve" id="services">
+        <div class="serve_content">
+            <div class="serve_title">
+                <div class="serve_title_content">
+                    <p>OUR SERVICES</p>
+                    <h1>Bunch of Services <span>to Rock Your Business</span></h1>
+                </div>
+            </div>
+            <div class="serve_Classification">
+                <div class="serve_Classification_content">
 
+                    <ul class="serialtabs-nav" id="serialtabs-nav">
+                        <li class="serve_clink">
+                            <div class="serve_clink_content">
+                                <div class="serve_clink_content_title">
+                                    <div class="serve_clink_content_title_content sub-link-1"
+                                        data-serialtabs="#tabs-nav-1">
+                                        <img src="./images/serve_icon_1.png">
+                                        <span>
+                                            <p>Business</p>
+                                            <p>Consultancy</p>
+                                        </span>
+                                    </div>
+                                </div>
 
+                            </div>
+                        </li>
+                        <li>
+                            <div class="serve_clink_content">
+                                <div class="serve_clink_content_title">
+                                    <div class="serve_clink_content_title_content sub-link-1"
+                                        data-serialtabs="#tabs-nav-2">
+                                        <img src="./images/serve_icon_2.png">
+                                        <span>
+                                            <P>Digital</P>
+                                            <p>Marketing</p>
+                                        </span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li>
+                            <div class="serve_clink_content">
+                                <div class="serve_clink_content_title">
+                                    <div class="serve_clink_content_title_content sub-link-1"
+                                        data-serialtabs="#tabs-nav-3">
+                                        <img src="./images/serve_icon_3.png">
+                                        <span>
+                                            <P>Market</P>
+                                            <p>Analysis</p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <!-- ------------------------------------------------------------- -->
+
+                    <!-- Tabbed Content -->
+                    <div id="tabs-nav-1" class="serialtabs-nav-content">
+                        <div class="serve_tabbed">
+                            <div class="serve_tabbed_content">
+                                <div class="serve_tabbed_img">
+                                    <div class="serve_tabbed_img_content"><img src="./images/serve.jpg"></div>
+                                </div>
+                                <div class="serve_tabbed_text">
+                                    <div class="serve_tabbed_text_content">
+                                        <h1><b>Business Consultancy</b> for Your Business Growth.</h1>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec est arcu.
+                                            Maecenas semper tortor.
+                                            <br><br>
+                                            In elementum in risus sed commodo. Phasellus nisi ligula, luctus at tempor
+                                            vitae, placerat at ante. Cras sed consequat justo. Curabitur laoreet eu est
+                                            vel convallis.
+                                        </p>
+                                        <div class="infographics">
+                                            <div class="infographics_content">
+                                                <div id="demo-pie-1" class="pie-title-center" data-percent="95"> <span
+                                                        class="pie-value"></span> </div>
+                                                <div class="infographics_text">
+                                                    <div class="infographics_content">
+                                                        <h4>
+                                                            Consultancy<br>
+                                                            Agency Skill.</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tabs-nav-2" class="serialtabs-nav-content">
+                        <div class="serve_tabbed">
+                            <div class="serve_tabbed_content">
+                                <div class="serve_tabbed_img">
+                                    <div class="serve_tabbed_img_content"><img src="./images/serve.jpg"></div>
+                                </div>
+                                <div class="serve_tabbed_text">
+                                    <div class="serve_tabbed_text_content">
+                                        <h1><b>Digital Marketing</b> for Your Business Growth.</h1>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec est arcu.
+                                            Maecenas semper tortor.
+                                            <br><br>
+                                            In elementum in risus sed commodo. Phasellus nisi ligula, luctus at tempor
+                                            vitae, placerat at ante. Cras sed consequat justo. Curabitur laoreet eu est
+                                            vel convallis.
+                                        </p>
+                                        <div class="infographics">
+                                            <div class="infographics_content">
+                                                <div id="demo-pie-2" class="pie-title-center" data-percent="85"> <span
+                                                        class="pie-value"></span> </div>
+                                                <div class="infographics_text">
+                                                    <div class="infographics_content">
+                                                        <h4>
+                                                            Digital Marketing<br>
+                                                            Skill.</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tabs-nav-3" class="serialtabs-nav-content">
+                        <div class="serve_tabbed">
+                            <div class="serve_tabbed_content">
+                                <div class="serve_tabbed_img">
+                                    <div class="serve_tabbed_img_content"><img src="./images/serve.jpg"></div>
+                                </div>
+                                <div class="serve_tabbed_text">
+                                    <div class="serve_tabbed_text_content">
+                                        <h1><b>Market Analysis</b> for Your Business Growth.</h1>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec est arcu.
+                                            Maecenas semper tortor.
+                                            <br><br>
+                                            In elementum in risus sed commodo. Phasellus nisi ligula, luctus at tempor
+                                            vitae, placerat at ante. Cras sed consequat justo. Curabitur laoreet eu est
+                                            vel convallis.
+                                        </p>
+                                        <div class="infographics">
+                                            <div class="infographics_content">
+                                                <div id="demo-pie-3" class="pie-title-center" data-percent="75"> <span
+                                                        class="pie-value"></span> </div>
+                                                <div class="infographics_text">
+                                                    <div class="infographics_content">
+                                                        <h4>
+                                                            Market Analysis<br>
+                                                            Agency Skill.</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- ------------------------------------------------------------- -->
+
+        <!-- service_items -->
+        <div class="service_items">
+            <div class="service_items_content">
+                <div class="service_items_title">
+                    <div class="service_items_title_content">
+                        <p>WHY US</p>
+                        <h1><span>The reasons to choose us</span> as your business partner</h1>
+                    </div>
+                </div>
+                <div class="service_items_box">
+                    <div class="service_items_box_content">
+                        <ul>
+                            <Li>
+                                <div class="service_items_box_img">
+                                    <div class="service_items_box_img_content">
+                                        <img src="./images/service_items_1.png">
+                                    </div>
+                                </div>
+                                <div class="service_items_box_text">
+                                    <div class="service_items_box_text_content">
+                                        <h5>Highly Experienced</h5>
+                                        <p>Lorem Ipsum is simply dummy tex of the printing and typesetting industry.
+                                            Lorem Ipsum .</p>
+                                    </div>
+                                </div>
+                                <div class="service_items_svg1" id="service_items_1">
+                                    <div class="service_items_svg1_content"></div>
+                                </div>
+                            </Li>
+                            <Li>
+                                <div class="service_items_box_img">
+                                    <div class="service_items_box_img_content">
+                                        <img src="./images/service_items_2.png">
+                                    </div>
+                                </div>
+                                <div class="service_items_box_text">
+                                    <div class="service_items_box_text_content">
+                                        <h5>Bunch of Services</h5>
+                                        <p>Lorem Ipsum is simply dummy tex of the printing and typesetting industry.
+                                            Lorem Ipsum .</p>
+                                    </div>
+                                </div>
+                                <div class="service_items_svg2">
+                                    <div class="service_items_svg2_content" id="service_items_2"></div>
+                                </div>
+                            </Li>
+                            <Li>
+                                <div class="service_items_box_img">
+                                    <div class="service_items_box_img_content">
+                                        <img src="./images/service_items_3.png">
+                                    </div>
+                                </div>
+                                <div class="service_items_box_text">
+                                    <div class="service_items_box_text_content">
+                                        <h5>Quality Support</h5>
+                                        <p>Lorem Ipsum is simply dummy tex of the printing and typesetting industry.
+                                            Lorem Ipsum .</p>
+                                    </div>
+                                </div>
+                                <div class="service_items_svg3">
+                                    <div class="service_items_svg3_content" id="service_items_3"></div>
+                                </div>
+                            </Li>
+                        </ul>
+                        <div class="service_items_button">
+                            <div class="service_items_button_content">
+                                <a href="#">All Services</a>
+                            </div>
+                            <div class="service_items_svg4">
+                                <div class="service_items_svg4_content" id="service_items_4"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------------------------------------------------- -->
+
+    <!-- portfolio -->
+    <div class="Portfolio">
+        <div class="Portfolio_content">
+            <div class="portfolio_title">
+                <div class="portfolio_title_content">
+                    <span>PORTFOLIO</span>
+                    <h1><span>Portfolio</span> Gallery.</h1>
+                </div>
+            </div>
+            <div class="filter_title">
+                <div class="filter_title_contnet">
+                    <span data-filter>See All </span>
+                    <span data-filter="first_laptop">laptop </span>
+                    <span data-filter="branding">Branding</span>
+                    <span data-filter="creative">Creative</span>
+                    <span data-filter="laptop">Laptop</span>
+                    <span data-filter="product">Pproduct</span>
+                </div>
+            </div>
+            <div class="filter_object">
+                <div class="filter_object_content">
+                    <div class="filter_object_content_object" data-tags="first_laptop,branding,product"><a href="#"><img
+                                src="./images/Portfolio1.webp"></a></div>
+                    <div class="filter_object_content_object" data-tags="branding,first_laptop,creative,laptop"><a
+                            href="#"></a><img src="./images/Portfolio5.webp"></div>
+                    <div class="filter_object_content_object" data-tags="creative,product,creative"><a href="#"><img
+                                src="./images/Portfolio3.webp"></a></div>
+                    <div class="filter_object_content_object" data-tags="product,branding,creative,laptop"><a
+                            href="#"><img src="./images/Portfolio4.webp"></a></div>
+                    <div class="filter_object_content_object" data-tags="creative,first_laptop,creative"><a
+                            href="#"><img src="./images/Portfolio2.webp"></a></div>
+                    <div class="filter_object_content_object" data-tags="laptop,branding,creative"><a href="#"><img
+                                src="./images/Portfolio6.webp"></a></div>
+                </div>
+            </div>
+            <div class="Portfolio_buttom">
+                <div class="Portfolio_buttom_content">
+                    <a href="#">Load More</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -181,14 +499,42 @@
 
 
     <!-- jq -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+
+
+    <!-- header -->
+    <script type="text/javascript" src="./js/header.js"></script>
+    <script type="text/javascript" src="./js/header_scroll.js"></script>
 
     <!-- about -->
-    <script type="text/javascript" src="./js/jquery.circlechart.js"></script>
+    <script type="text/javascript" src="./js/circle-progress.js"></script>
     <script type="text/javascript" src="./js/about.js"></script>
 
-    <!-- style_js -->
+    <!-- serve -->
+    <script type="text/javascript" src="./js/jquery.serialtabs.min.js"></script>
+    <script type="text/javascript" src="./js/serve.js"></script>
+
+    <!-- serve_content -->
+    <script type="text/javascript" src="./js/pie-chart.js"></script>
+    <script type="text/javascript" src="./js/serve_content.js"></script>
+
+    <!-- Portfolio -->
+    <script type="text/javascript" src="./js/autofilter.js"></script>
+    <script type="text/javascript" src="./js/Portfolio.js"></script>
+
+    <!-- style -->
     <script type="text/javascript" src="./js/style.js"></script>
+
+    <!-- load -->
+    <script>
+        $(function () {
+            $("#service_items_1").load("./svg/service_items_1.svg");
+            $("#service_items_2").load("./svg/service_items_2.svg");
+            $("#service_items_3").load("./svg/service_items_3.svg");
+            $("#service_items_4").load("./svg/service_items_4.svg");
+        })
+    </script>
 
 </body>
 

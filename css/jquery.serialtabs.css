@@ -1,0 +1,164 @@
+/* JavaScript: serialtabs */
+.serialtabs-nav {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.serialtabs-nav li {
+  width: 20%;
+}
+
+.serialtabs-nav .sub-link-1 {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 400;
+  transition: 400ms;
+  text-align: left;
+  position: relative;
+}
+
+.serialtabs-nav .sub-link-1 img {
+  width: auto;
+  height: auto;
+  padding-right: 14px;
+}
+
+.serialtabs-nav .sub-link-1 span {
+  width: 50%;
+}
+
+.serialtabs-nav .sub-link-1 .is-current {
+  background-color: #fff;
+  cursor: default;
+  color: #000;
+  opacity: 1;
+}
+/* .serialtabs-nav[data-serialtabs-mode="tabs"] > li + li {
+  margin-left: -2px;
+} */
+.serialtabs-nav[data-serialtabs-mode="accordion"] {
+  display: block;
+}
+.serialtabs-nav[data-serialtabs-mode="accordion"] > li + li {
+  margin-top: -2px;
+}
+.serialtabs-nav[data-serialtabs-mode="accordion"] .serialtabs-nav-content {
+  padding: 20px;
+  border-top: 0;
+}
+
+.serialtabs-nav-content {
+  position: relative;
+}
+
+.serve_tabbed {
+  margin: 0 auto;
+}
+
+.serve_tabbed_content {
+  display: flex;
+}
+
+.serve_tabbed_img {
+  width: 90%;
+  padding-bottom: 5%;
+}
+
+.serve_tabbed_img_content {
+  margin: 0 auto;
+}
+
+.serve_tabbed_img_content img {
+  width: 100%;
+  height: auto;
+}
+
+.serve_tabbed_text {
+  width: 90%;
+}
+
+.serve_tabbed_text_content {
+  text-align: left;
+}
+
+.serve_tabbed_text_content h1 {
+  font-size: 40px;
+}
+
+.serve_tabbed_text_content h1 b {
+  font-weight: 900;
+}
+
+.serve_tabbed_text_content p {
+  margin-top: 35px;
+  font-size: 14px;
+  color: #798795;
+  line-height: 1.6;
+}
+
+.infographics {
+  position: relative;
+  margin-top: 35px;
+}
+
+.infographics_content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.infographics_text {
+  margin-left: 30px;
+}
+
+@media screen and (max-width: 889px) {
+  .serialtabs-nav li {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .serve_tabbed_content {
+    display: block;
+    padding: 10px;
+  }
+
+  .serve_tabbed_img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .serve_tabbed_text {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .serialtabs-nav .sub-link-1 img {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 745px) {
+  .infographics_text {
+    margin-left: 0;
+  }
+
+  .infographics_content {
+    display: block;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .serialtabs-nav {
+    width: 100%;
+  }
+}
