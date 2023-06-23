@@ -635,6 +635,7 @@ table {
 
 .textBox_Title {
   position: relative;
+  text-align: left;
 }
 
 .textBox_Title div {
@@ -671,6 +672,7 @@ table {
 .textBox_Title_Content p {
   padding-top: 40px;
   line-height: 1.8;
+  text-align: left;
 }
 
 .textBox_search {
