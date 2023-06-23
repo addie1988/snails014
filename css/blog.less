@@ -1,0 +1,636 @@
+@import url(../css/reset.css);
+@import url(../css/style.css);
+
+// --------------------------------------------------------------------------
+
+@max-width: 1200px;
+@margin-left: auto;
+@margin-right: auto;
+@font-weight: 600;
+@color: #222;
+@background-color: #f14836;
+@background-size: cover;
+@background-attachment: fixed;
+@display: flex;
+@align-items: center;
+@justify-content: center;
+@flex-wrap: wrap;
+
+// --------------------------------------------------------------------------
+
+//textBox
+
+.textBoxContent_Contennt_style {
+    width: 50%;
+    display: @display;
+    align-items: @align-items;
+
+    .textBox_Title {
+        .textBox_Title_content_style {
+            text-align: left;
+        }
+    }
+}
+
+.textBox_img {
+    width: 40%;
+}
+
+@media (max-width: 1220px) {
+    .textBoxContent_Contennt_style {
+        width: 100%;
+    }
+
+    .textBox_img {
+        width: 100%;
+    }
+}
+
+// --------------------------------------------------------------------------
+
+// blog
+
+.blog {
+    position: relative;
+    padding: 70px 0 120px 0;
+
+    .blog_content {
+        max-width: @max-width;
+        margin: 0 auto;
+        display: @display;
+        flex-wrap: @flex-wrap;
+        justify-content: @justify-content;
+
+        .blog_post {
+            width: 67%;
+            position: relative;
+
+            .blog_post_content {
+                margin: 0 auto;
+
+                .blog_img {
+                    position: relative;
+
+                    .blog_img_content {
+                        margin: 0 auto;
+
+                        img {
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                }
+
+                .blog_text {
+                    position: relative;
+
+                    .blog_text_content {
+                        margin: 0 auto;
+                        line-height: 1.8;
+
+                        h1 {
+                            font-size: 24px;
+                            font-weight: 600;
+                            margin: 24px 0;
+                        }
+
+                        p {
+                            font-size: 14px;
+                            color: rgb(121, 135, 149);
+                        }
+
+                        article {
+                            color: rgb(255, 255, 255);
+                            font-size: 32px;
+                            padding: 65px 50px;
+                            border-radius: 5px;
+                            margin-top: 45px;
+                            background-color: rgb(241, 72, 54);
+                            position: relative;
+
+                            &::before {
+                                content: "";
+                                width: 130px;
+                                height: 156px;
+                                display: inline-block;
+                                position: absolute;
+                                left: 40px;
+                                top: 40px;
+                                background: url(../images/article.png) no-repeat;
+                                opacity: .2;
+                            }
+                        }
+
+                        ul {
+                            margin-top: 45px;
+                            line-height: 3;
+
+                            li {
+                                color: rgb(121, 135, 149);
+                            }
+                        }
+
+                        .tribal_community {
+                            position: relative;
+                            margin-top: 60px;
+                            padding-top: 25px;
+                            border-top: .1px solid #dedede4f;
+
+                            .tribal_community_content {
+                                margin: 0 auto;
+                                display: @display;
+                                align-items: @align-items;
+
+                                p {
+                                    display: inline-block;
+                                }
+
+                                ul {
+                                    margin: 0;
+                                    display: @display;
+                                    flex-wrap: @flex-wrap;
+
+                                    li {
+                                        margin: 6px;
+                                        list-style: none;
+
+                                        a {
+                                            display: inline-block;
+
+                                            img {
+                                                width: 100%;
+                                                height: auto;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .comment {
+                                position: relative;
+
+                                .comment_content {
+                                    margin: 0 auto;
+
+                                    .comment_title {
+                                        position: relative;
+
+                                        .comment_title_content {
+                                            margin: 0 auto;
+                                        }
+                                    }
+
+                                    ul {
+                                        margin: 0;
+
+                                        li {
+                                            display: @display;
+                                            align-items: flex-end;
+                                            margin-top: 50px;
+
+                                            &:nth-child(2) {
+                                                padding-left: 100px;
+                                            }
+
+                                            .comment_img {
+                                                width: 140px;
+                                                height: 140px;
+                                                position: relative;
+                                                display: @display;
+                                                align-items: flex-end;
+
+                                                .comment_img_content {
+                                                    margin: 0 auto;
+                                                    border-radius: 50%;
+                                                    display: inherit;
+
+                                                    img {
+                                                        width: 100%;
+                                                        height: auto;
+                                                        border-radius: 50%;
+                                                    }
+                                                }
+                                            }
+
+                                            .comment_text {
+                                                position: relative;
+                                                margin: 0 0 0 20px;
+
+                                                .comment_text_content {
+                                                    margin: 0 auto;
+                                                    line-height: 2;
+                                                    padding: 25px 60px;
+                                                    background-color: #f6f6f6;
+                                                    position: relative;
+
+                                                    &::before {
+                                                        content: "";
+                                                        width: 0;
+                                                        height: 0;
+                                                        display: inline-block;
+                                                        position: absolute;
+                                                        top: 0;
+                                                        left: -100px;
+                                                        border: 50px solid;
+                                                        border-color: #f6f6f6 #f6f6f6 transparent transparent;
+                                                    }
+
+                                                    @media (max-width: 1220px) {
+                                                        &::before {
+                                                            top: -100px;
+                                                            left: 0;
+                                                            transform: rotate(180deg);
+                                                        }
+                                                    }
+
+
+                                                    h5 {
+                                                        font-weight: 900;
+                                                    }
+
+                                                    ul {
+                                                        display: @display;
+
+                                                        li {
+                                                            margin-right: 25px;
+                                                            padding-left: 0;
+
+                                                            a {
+                                                                display: @display;
+                                                                align-items: @align-items;
+                                                                text-decoration: none;
+
+                                                                &:hover p {
+                                                                    color: @background-color;
+                                                                }
+
+                                                                img {
+                                                                    width: 16px;
+                                                                    height: 16px;
+                                                                    margin-right: 8px;
+                                                                }
+
+                                                                p {
+                                                                    transition: 1s ease-in-out;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+
+                                                    @media (max-width: 1220px) {
+                                                        ul {
+                                                            display: @display;
+                                                            flex-wrap: @flex-wrap;
+
+                                                            li {
+                                                                margin-top: 10px;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+
+                                            @media (max-width: 1220px) {
+                                                .comment_img {
+                                                    width: 100%;
+                                                    align-items: center;
+                                                }
+
+                                                .comment_text {
+                                                    width: 100%;
+                                                }
+                                            }
+                                        }
+
+                                        @media (max-width: 1220px) {
+                                            li {
+                                                margin-top: 30px;
+                                                display: @display;
+                                                flex-wrap: @flex-wrap;
+
+                                                &:nth-child(2) {
+                                                    padding-left: 0;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .form_message {
+                                position: relative;
+                                padding-top: 115px;
+
+                                .form_message_content {
+                                    margin: 0 auto;
+
+                                    .form_message_title {
+                                        position: relative;
+
+                                        .form_message_title_content {
+                                            margin: 0 auto;
+                                            display: @display;
+                                            flex-wrap: @flex-wrap;
+
+                                            img {
+                                                margin-right: 10px;
+                                                width: 32px;
+                                                height: 32px;
+                                            }
+
+                                            h2 {
+                                                font-size: 23px;
+
+                                                span {
+                                                    font-weight: 900;
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    form {
+                                        position: relative;
+                                        padding-top: 45px;
+
+                                        .register_form {
+                                            .register_form_style {
+                                                justify-content: left;
+
+                                                .register_form_name_style {
+                                                    margin: 0;
+                                                    margin-right: 30px;
+                                                }
+
+                                                @media (max-width: 1220px) {
+                                                    .register_form_name_style {
+                                                        width: 100%;
+                                                        margin-right: 0;
+                                                    }
+                                                }
+
+                                                .register_form_email_style {
+                                                    margin: 0;
+                                                }
+
+                                                @media (max-width: 1220px) {
+                                                    .register_form_email_style {
+                                                        width: 100%;
+                                                    }
+                                                }
+                                            }
+                                        }
+
+                                        .message {
+                                            .message_content {
+                                                .textarea_style {
+                                                    width: 95%;
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    .register_button {
+                                        position: relative;
+
+                                        .register_button_sytle {
+                                            margin: 0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .blog_selection {
+            width: 33%;
+            position: relative;
+            margin-top: 50px;
+
+            .blog_selection_content {
+                margin: 0 auto;
+
+                .all_categories {
+                    position: relative;
+                    border: 1px solid rgba(222, 222, 222, 0.31);
+
+                    .all_categories_content {
+                        margin: 0 auto;
+
+                        .all_categories_title {
+                            position: relative;
+                            padding: 15px 30px;
+
+                            .all_categories_title_content {
+                                margin: 0 auto;
+                                display: @display;
+                                align-items: @align-items;
+
+                                h4 {
+                                    margin-left: 10px;
+                                    font-weight: 800;
+                                }
+                            }
+                        }
+
+                        ul {
+                            border-top: .5px solid #dedede4f;
+
+                            li {
+                                padding: 15px 30px;
+
+                                &:nth-child(7) {
+                                    border-top: .5px solid #dedede4f;
+
+                                    a {
+                                        justify-content: flex-start;
+
+                                        p {
+                                            margin-left: 10px;
+                                        }
+                                    }
+                                }
+
+                                a {
+                                    color: #798795;
+                                    text-decoration: none;
+                                    display: @display;
+                                    justify-content: space-between;
+                                    transition: 1s ease-in-out;
+
+                                    &:hover {
+                                        color: #f14836;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .popular_tag {
+                    position: relative;
+                    border: 1px solid rgba(222, 222, 222, 0.31);
+                    margin-top: 60px;
+
+                    .popular_tag_content {
+                        margin: 0 auto;
+
+                        .popular_tag_title {
+                            position: relative;
+                            padding: 15px 30px;
+
+                            .popular_tag_title_content {
+                                margin: 0 auto;
+
+                                h4 {
+                                    font-weight: 800;
+                                }
+                            }
+                        }
+
+                        ul {
+                            border-top: .5px solid #dedede4f;
+                            display: @display;
+                            justify-content: space-between;
+                            flex-wrap: @flex-wrap;
+
+                            li {
+                                padding: 15px 30px;
+                                width: 100%;
+
+                                a {
+                                    color: #798795;
+                                    text-decoration: none;
+                                    transition: 1s ease-in-out;
+                                    padding: 6px;
+
+                                    &:hover {
+                                        color: #fff;
+                                        background-color: #f14836;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .Project {
+                    position: relative;
+                    border: 1px solid rgba(222, 222, 222, 0.31);
+                    margin-top: 60px;
+
+                    .Project_content {
+                        margin: 0 auto;
+
+                        .Project_title {
+                            position: relative;
+                            padding: 15px 30px;
+
+                            .Project_title_content {
+                                margin: 0 auto;
+
+                                h4 {
+                                    font-weight: 800;
+                                }
+                            }
+                        }
+
+                        ul {
+                            border-top: .5px solid #dedede4f;
+
+                            li {
+                                padding: 15px 30px;
+
+                                a {
+                                    color: #798795;
+                                    text-decoration: none;
+                                    transition: 1s ease-in-out;
+                                    padding: 6px;
+                                    display: @display;
+                                    justify-content: space-between;
+
+                                    &:hover {
+                                        color: #fff;
+                                        background-color: #f14836;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .Ratting {
+                    position: relative;
+                    border: 1px solid rgba(222, 222, 222, 0.31);
+                    margin-top: 60px;
+
+                    .Ratting_content {
+                        margin: 0 auto;
+
+                        .Ratting_title {
+                            position: relative;
+                            padding: 15px 30px;
+
+                            .Ratting_title_content {
+                                margin: 0 auto;
+
+                                h4 {
+                                    font-weight: 800;
+                                }
+                            }
+                        }
+
+                        ul {
+                            border-top: .5px solid #dedede4f;
+
+                            li {
+                                padding: 15px 30px;
+
+                                a {
+                                    color: #798795;
+                                    text-decoration: none;
+                                    transition: 1s ease-in-out;
+                                    padding: 6px;
+                                    display: @display;
+                                    justify-content: space-between;
+
+                                    &:hover {
+                                        color: #fff;
+                                        background-color: #f14836;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        @media (max-width: 1220px) {
+            .blog_post {
+                width: 90%;
+            }
+
+            .blog_selection {
+                width: 900%;
+            }
+        }
+    }
+}
+
+@media (max-width: 1220px) {
+    .blog {
+        padding: 70px 0 40px 0;
+    }
+}
+
+
+
+
+@media (max-width: 1220px) {
+    .footer {
+        margin-top: 20px;
+    }
+}

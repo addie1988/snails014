@@ -22,7 +22,8 @@
                 <!-- logo -->
                 <div class="logo">
                     <div class="logoContent">
-                        <a hreh="#"><img src="./images/logo.png">
+                        <a href="./index.html">
+                            <img src="./images/logo.png">
                             <p>conulst</p>
                         </a>
                     </div>
@@ -45,6 +46,7 @@
                             <li><a href="#services">Services</a></li>
                             <li><a href="#portfolio">Portfolio</a></li>
                             <li><a href="#blog">Blog</a></li>
+                            <li><a href="#contact">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -426,10 +428,12 @@
             <div class="portfolio_title">
                 <div class="portfolio_title_content">
                     <span>PORTFOLIO</span>
-                    <h1><span>Portfolio</span> Gallery.</h1>
+                    <h1>
+                        <p>Portfolio</p> Gallery.
+                    </h1>
                 </div>
             </div>
-            <div class="filter_title">
+            <div class="filter_title" id="portfolio">
                 <div class="filter_title_contnet">
                     <span data-filter>See All </span>
                     <span data-filter="first_laptop">laptop </span>
@@ -441,43 +445,531 @@
             </div>
             <div class="filter_object">
                 <div class="filter_object_content">
-                    <div class="filter_object_content_object" data-tags="first_laptop,branding,product"><a href="#"><img
-                                src="./images/Portfolio1.webp"></a></div>
-                    <div class="filter_object_content_object" data-tags="branding,first_laptop,creative,laptop"><a
-                            href="#"></a><img src="./images/Portfolio5.webp"></div>
-                    <div class="filter_object_content_object" data-tags="creative,product,creative"><a href="#"><img
-                                src="./images/Portfolio3.webp"></a></div>
-                    <div class="filter_object_content_object" data-tags="product,branding,creative,laptop"><a
-                            href="#"><img src="./images/Portfolio4.webp"></a></div>
-                    <div class="filter_object_content_object" data-tags="creative,first_laptop,creative"><a
-                            href="#"><img src="./images/Portfolio2.webp"></a></div>
-                    <div class="filter_object_content_object" data-tags="laptop,branding,creative"><a href="#"><img
-                                src="./images/Portfolio6.webp"></a></div>
+                    <div class="filter_object_content_object" data-tags="first_laptop,branding,product"
+                        onclick="filter_object_img()">
+                        <div class="filter_object_content_object_img"><img src="./images/Portfolio1.jpg"></div>
+                    </div>
+                    <div class="filter_object_content_object" data-tags="branding,first_laptop,creative,laptop"
+                        onclick="filter_object_img()">
+                        <div class="filter_object_content_object_img"><img src="./images/Portfolio5.jpg"></div>
+                    </div>
+                    <div class="filter_object_content_object" data-tags="creative,product,creative"
+                        onclick="filter_object_img()">
+                        <div class="filter_object_content_object_img"><img src="./images/Portfolio3.jpg"></div>
+                    </div>
+                    <div class="filter_object_content_object" data-tags="product,branding,creative,laptop"
+                        onclick="filter_object_img()">
+                        <div class="filter_object_content_object_img"><img src="./images/Portfolio4.jpg"></div>
+                    </div>
+                    <div class="filter_object_content_object" data-tags="creative,first_laptop,creative"
+                        onclick="filter_object_img()">
+                        <div class="filter_object_content_object_img"><img src="./images/Portfolio2.jpg"></div>
+                    </div>
+                    <div class="filter_object_content_object" data-tags="laptop,branding,creative"
+                        onclick="filter_object_img()">
+                        <div class="filter_object_content_object_img"><img src="./images/Portfolio6.jpg"></div>
+                    </div>
                 </div>
-            </div>
-            <div class="Portfolio_buttom">
-                <div class="Portfolio_buttom_content">
-                    <a href="#">Load More</a>
+
+                <!-- filter_object_img -->
+                <div class="filter_object_img" id="product_main">
+                    <span class="filter_object_img_closure" onclick="productClose()"></span>
+                    <div class="filter_object_img_content">
+                        <div class="filter_object_img_content_img">
+                            <img src="./images/Portfolio1.jpg">
+                        </div>
+                        <div class="filter_object_img_content_img">
+                            <img src="./images/Portfolio2.jpg">
+                        </div>
+                        <div class="filter_object_img_content_img">
+                            <img src="./images/Portfolio3.jpg">
+                        </div>
+                        <div class="filter_object_img_content_img">
+                            <img src="./images/Portfolio4.jpg">
+                        </div>
+                        <div class="filter_object_img_content_img">
+                            <img src="./images/Portfolio5.jpg">
+                        </div>
+                        <div class="filter_object_img_content_img">
+                            <img src="./images/Portfolio6.jpg">
+                        </div>
+
+                        <!-- filter_title_text -->
+                        <div class="filter_text">
+                            <div class="filter_text_conntent">
+                                <p id="filter_text_conntent_text"></p>
+                            </div>
+                        </div>
+
+                        <!-- filter_imgDot -->
+                        <div class="filter_imgDot">
+                            <div class="filter_imgDot_content">
+                                <div class="filter_imgDot_img">
+                                    <img class="_filter_imgDotdot" src="./images/Portfolio1.jpg"
+                                        onclick="filter_imgDot(1)" alt="1 of6">
+                                </div>
+                                <div class="filter_imgDot_img">
+                                    <img class="_filter_imgDotdot" src="./images/Portfolio2.jpg"
+                                        onclick="filter_imgDot(2)" alt="2 of6">
+                                </div>
+                                <div class="filter_imgDot_img">
+                                    <img class="_filter_imgDotdot" src="./images/Portfolio3.jpg"
+                                        onclick="filter_imgDot(3)" alt="3 of6">
+                                </div>
+                                <div class="filter_imgDot_img">
+                                    <img class="dot" src="./images/Portfolio4.jpg" onclick="filter_imgDot(4)"
+                                        alt="4 of6">
+                                </div>
+                                <div class="filter_imgDot_img">
+                                    <img class="_filter_imgDotdot" src="./images/Portfolio5.jpg"
+                                        onclick="filter_imgDot(5)" alt="5 of6">
+                                </div>
+                                <div class="filter_imgDot_img">
+                                    <img class="_filter_imgDotdot" src="./images/Portfolio6.jpg"
+                                        onclick="filter_imgDot(6)" alt="6 of6">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="filter_object_img_Button">
+                            <div class="filter_object_img_Button_content">
+                                <a class="filter_object_img_Button_lift" onclick="productImgButton(-1)"></a>
+                                <a class="filter_object_img_Button_right" onclick="productImgButton(1)"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Portfolio_buttom">
+                    <div class="Portfolio_buttom_content">
+                        <a href="#">Load More</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- ------------------------------------------------------------- -->
 
+    <!-- Client_messages -->
+    <div class="Client_messages">
+        <div class="Client_messages_content">
+            <div class="Client_messages_text">
+                <div class="Client_messages_text_content">
+                    <div class="Client_messages_text_title">
+                        <div class="Client_messages_text_title_content">
+                            <span>TESTIMONIALS</span>
+                            <h1>What Client Says, About Us</h1>
+                        </div>
+                    </div>
+                    <div class="Wire">
+                        <div class="Wire_content">
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="Client_messages_text_narrative">
+                        <div class="Client_messages_text_narrative_content">
+                            <p>Duis et metus et massa tempus lacinia. Class aptent taciti sociosqu ad litora
+                                torquent per conubia nostra, per inceptos himenaeos. Maecenas ultricies, orci
+                                molestie blandit interdum.
+                                <br><br>
+                                ipsum ante pellentesque nisl, eget mollis turpis quam nec eros. ultricies, orci
+                                molestie blandit interdum.
+                            </p>
+                        </div>
+                        <div class="Client_messages_text_button">
+                            <div class="Client_messages_text_button_content">
+                                <div class="left btn"><span>←</span></div>
+                                <div class="right btn"><span>→</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider_carousel">
+                <div id="symbol"></div>
+                <div class="slider">
+                    <ul class="slider_contnet">
+                        <li>
+                            <div class="message_area_content">
+                                <div class="message_area_text">
+                                    <p>“Praesent scelerisque, odio eu fermentum malesuada, nisi arcu volutpat nisl, sit
+                                        amet convallis nunc turp.”</p>
+                                </div>
+                                <div class="message_area_title">
+                                    <div class="portrait">
+                                        <img src="./images/portrait_img1.webp" alt="人像">
+                                        <div class="surname">
+                                            <p>John Doe</p>
+                                            <p>CEO, Alphabet</p>
+                                        </div>
+                                    </div>
+                                    <div class="score">
+                                        <P>☆☆☆☆☆</P>
+                                        <p>7 Reviews</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="message_area_content">
+                                <div class="message_area_text">
+                                    <p>“Praesent scelerisque, odio eu fermentum malesuada, nisi arcu volutpat nisl, sit
+                                        amet convallis nunc turp.”</p>
+                                </div>
+                                <div class="message_area_title">
+                                    <div class="portrait">
+                                        <img src="./images/portrait_img2.webp" alt="人像">
+                                        <div class="surname">
+                                            <p>John Doe</p>
+                                            <p>CEO, Alphabet</p>
+                                        </div>
+                                    </div>
+                                    <div class="score">
+                                        <P>☆☆☆☆☆</P>
+                                        <p>7 Reviews</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="message_area_content">
+                                <div class="message_area_text">
+                                    <p>“Praesent scelerisque, odio eu fermentum malesuada, nisi arcu volutpat nisl, sit
+                                        amet convallis nunc turp.”</p>
+                                </div>
+                                <div class="message_area_title">
+                                    <div class="portrait">
+                                        <img src="./images/portrait_img3.webp" alt="人像">
+                                        <div class="surname">
+                                            <p>John Doe</p>
+                                            <p>CEO, Alphabet</p>
+                                        </div>
+                                    </div>
+                                    <div class="score">
+                                        <P>☆☆☆☆☆</P>
+                                        <p>7 Reviews</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!-- ------------------------------------------------------------- -->
 
+    <!-- blog -->
+    <div class="blog">
+        <div class="blog_content">
+            <!-- Partner -->
+            <div class="Partner">
+                <div class="Partner_content">
+                    <ul>
+                        <li><img src="./images/Partner1.webp" alt="合作廠商"></li>
+                        <li><img src="./images/Partner2.webp" alt="合作廠商"></li>
+                        <li><img src="./images/Partner3.webp" alt="合作廠商"></li>
+                        <li><img src="./images/Partner4.webp" alt="合作廠商"></li>
+                        <li><img src="./images/Partner5.webp" alt="合作廠商"></li>
+                    </ul>
+                </div>
+            </div>
 
+            <!-- blog_area -->
+            <div class="blog_area">
+                <div class="blog_area_content">
+                    <div class="blog_area_title">
+                        <div class="blog_area_title_content" id="blog">
+                            <P>OUR BLOG</P>
+                            <h1><span>Letest</span> News.</h1>
+                        </div>
+                    </div>
+                    <ul>
+                        <Li>
+                            <a href="./blog.html" target="_blank">
+                                <div class="blog_area_img">
+                                    <div class="blog_area_img_content">
+                                        <img src="./images/blog_area1.jpg" alt="部落格圖片">
+                                    </div>
+                                </div>
+                                <div class="blog_area_text">
+                                    <div class="blog_area_text_content">
+                                        <p class="blog_area_text_style">Nulla eget urna at tortor turpi feugiat
+                                            tristique in sit.</p>
+                                        <div class="blog_area_text_author">
+                                            <div class="blog_area_text_author_content">
+                                                <img src="./images/portrait_img3.webp">
+                                                <div class="blog_area_text_author_sign">
+                                                    <div class="blog_area_text_author_sign_content">
+                                                        <p>Posted by</p>
+                                                        <P>Isabela Moreira</P>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </Li>
+                        <Li>
+                            <a href="./blog.html" target="_blank">
+                                <div class="blog_area_img">
+                                    <div class="blog_area_img_content">
+                                        <img src="./images/blog_area2.jpg" alt="部落格圖片">
+                                    </div>
+                                </div>
+                                <div class="blog_area_text">
+                                    <div class="blog_area_text_content">
+                                        <p class="blog_area_text_style">Nulla eget urna at tortor turpi feugiat
+                                            tristique in sit.</p>
+                                        <div class="blog_area_text_author">
+                                            <div class="blog_area_text_author_content">
+                                                <img src="./images/portrait_img1.webp">
+                                                <div class="blog_area_text_author_sign">
+                                                    <div class="blog_area_text_author_sign_content">
+                                                        <p>Posted by</p>
+                                                        <P>Elon Musk</P>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </Li>
+                        <Li>
+                            <a href="./blog.html" target="_blank">
+                                <div class="blog_area_img">
+                                    <div class="blog_area_img_content">
+                                        <img src="./images/blog_area3.jpg" alt="部落格圖片">
+                                    </div>
+                                </div>
+                                <div class="blog_area_text">
+                                    <div class="blog_area_text_content">
+                                        <p class="blog_area_text_style">Nulla eget urna at tortor turpi feugiat
+                                            tristique in sit.</p>
+                                        <div class="blog_area_text_author">
+                                            <div class="blog_area_text_author_content">
+                                                <img src="./images/portrait_img2.webp">
+                                                <div class="blog_area_text_author_sign">
+                                                    <div class="blog_area_text_author_sign_content">
+                                                        <p>Posted by</p>
+                                                        <P>Fiona</P>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </Li>
+                        <li></li>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!-- ------------------------------------------------------------- -->
 
+    <!-- connection -->
+    <div class="connection">
+        <div class="connection_content">
+            <!-- connection_title -->
+            <div class="connection_title">
+                <div class="connection_title_content">
+                    <p>OUR CONTACT</p>
+                    <h1><span>Get In</span> Touch.</h1>
+                </div>
+            </div>
+            <!-- contact_list -->
+            <div class="contact_list">
+                <div class="contact_list_content">
+                    <ul>
+                        <Li>
+                            <div class="contact_list_img">
+                                <div class="contact_list_img_content">
+                                    <img src="./images//connection1.png" alt="Icon">
+                                </div>
+                            </div>
+                            <div class="contact_list_text">
+                                <div class="contact_list_text_content">
+                                    <p>21 King Street, Melbourne</p>
+                                    <p>Victoria, 1202 Australia.</p>
+                                </div>
+                            </div>
+                        </Li>
+                        <Li>
+                            <div class="contact_list_img">
+                                <div class="contact_list_img_content">
+                                    <img src="./images//connection2.png" alt="Icon">
+                                </div>
+                            </div>
+                            <div class="contact_list_text">
+                                <div class="contact_list_text_content">
+                                    <p>hello@uideck.com</p>
+                                    <p>support@uideck.com</p>
+                                </div>
+                            </div>
+                        </Li>
+                        <Li>
+                            <div class="contact_list_img">
+                                <div class="contact_list_img_content">
+                                    <img src="./images//connection3.png" alt="Icon">
+                                </div>
+                            </div>
+                            <div class="contact_list_text">
+                                <div class="contact_list_text_content">
+                                    <P>+99 000 1111 555</P>
+                                    <P>+88 999 5555 444</P>
+                                </div>
+                            </div>
+                        </Li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!-- ------------------------------------------------------------- -->
 
+    <!-- register -->
+    <div class="<register>">
+        <div class="register_content" id="contact">
+            <form>
+                <div class="register_form">
+                    <div class="register_form_content">
+                        <div class="register_form_name">
+                            <div class="register_form_name_content">
+                                <label>Enter Your Name</label><input type="text" name="name" placeholder="Full Name">
+                            </div>
+                        </div>
+                        <div class="register_form_email">
+                            <div class="register_form_email_content">
+                                <label>Enter Your Email</label><input type="email" name="email" placeholder="Email">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="message">
+                    <div class="message_content">
+                        <label>Your Message</label>
+                        <textarea cols="100%" rows="20" maxlength="10"></textarea>
+                    </div>
+                </div>
+            </form>
+            <div class="register_button">
+                <div class="register_button_content">
+                    <a href="#">Send Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!-- ------------------------------------------------------------- -->
 
-
-
-
-
-
+    <!-- footer -->
+    <div class="footer">
+        <div class="footer_content">
+            <ul>
+                <li>
+                    <div class="footer_logo">
+                        <div class="footer_logo_content">
+                            <div class="footer_logo_img">
+                                <a href="./index.html">
+                                    <div class="footer_logo_img_content">
+                                        <img src="./images/logo.png" alt="Logo">
+                                        <p>conulst</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="footer_logo_text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, repudiandae!
+                                    Totam, nemo sed? Provident.</p><br><br>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="services">
+                        <div class="services_content">
+                            <div class="services_title">
+                                <div class="services_title_content">
+                                    <P>SERVICES</P>
+                                </div>
+                            </div>
+                            <ul>
+                                <li><a href="#">Business Consultancy</a></li>
+                                <li><a href="#">Digital Marketing</a></li>
+                                <li><a href="#">Market Analysis</a></li>
+                                <li><a href="#">Web Development</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="about_us">
+                        <div class="about_us_content">
+                            <div class="about_us_title">
+                                <div class="about_us_title_content">
+                                    <p>ABOUT US</p>
+                                </div>
+                            </div>
+                            <ul>
+                                <li><a href="#">Overview</a></li>
+                                <li><a href="#">Why us</a></li>
+                                <li><a href="#">Awards & Recognitions</a></li>
+                                <li><a href="#">Team</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="contact_info">
+                        <div class="contact_info_content">
+                            <div class="contact_info_title">
+                                <div class="contact_info_title_content">
+                                    <p>CONTACT INFO</p>
+                                </div>
+                            </div>
+                            <ul>
+                                <Li>
+                                    <p>21 King Street, Melbourne
+                                        Victoria, 1202 Australia.</p>
+                                </Li>
+                                <Li>
+                                    <p>support@uideck.com</p>
+                                </Li>
+                                <Li>
+                                    <p>+99 000 xxx xx 22</p>
+                                </Li>
+                                <Li>
+                                    <ul>
+                                        <li><a href="#"><img src="./images/facebook.png"></a></li>
+                                        <li><a href="#"><img src="./images/twitter.png"></a></li>
+                                        <li><a href="#"><img src="./images/instagram.png"></a></li>
+                                        <li><a href="#"><img src="./images/linkedin.png"></a></li>
+                                    </ul>
+                                </Li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="footer_bottom">
+                <div class="footer_bottom_content">
+                    <p>Copyright ©2012~2022 Snails . All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -523,6 +1015,12 @@
     <script type="text/javascript" src="./js/autofilter.js"></script>
     <script type="text/javascript" src="./js/Portfolio.js"></script>
 
+    <!-- portfolio_onclick -->
+    <script type="text/javascript" src="./js/portfolio_onclick.js"></script>
+
+    <!-- client_messages -->
+    <script type="text/javascript" src="./js/banner.js"></script>
+
     <!-- style -->
     <script type="text/javascript" src="./js/style.js"></script>
 
@@ -533,6 +1031,7 @@
             $("#service_items_2").load("./svg/service_items_2.svg");
             $("#service_items_3").load("./svg/service_items_3.svg");
             $("#service_items_4").load("./svg/service_items_4.svg");
+            $('#symbol').load("./svg/symbol.html");
         })
     </script>
 

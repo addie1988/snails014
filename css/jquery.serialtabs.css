@@ -120,6 +120,10 @@
 }
 
 @media screen and (max-width: 889px) {
+  .serialtabs-nav[data-serialtabs-mode="accordion"] {
+    display: block;
+  }
+
   .serialtabs-nav li {
     width: 100%;
   }
